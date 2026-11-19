@@ -1,0 +1,1443 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>亚洲成年人 | 影像内容平台,记录真实的成人生活故事</title>
+<meta name="description" content="亚洲成年人官方网站，聚焦亚洲成年人的生活影像社区，以原创高清内容记录职场、家庭、情感与成长的真实故事，为创作者与用户搭建值得信赖的内容生态。">
+<meta name="keywords" content="亚洲成年人,影像社区,原创内容,成人生活,品牌官网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a63'/%3E%3Cpath d='M24 18 L48 32 L24 46 Z' fill='%23f2b95c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --aac-ink:#1d2733;
+  --aac-ink-soft:#43536a;
+  --aac-paper:#f7f8fa;
+  --aac-white:#ffffff;
+  --aac-blue:#2f4a63;
+  --aac-blue-deep:#22384c;
+  --aac-blue-pale:#e8eef6;
+  --aac-amber:#e0a04a;
+  --aac-amber-soft:#f7e8cf;
+  --aac-line:#dce3ec;
+  --aac-shadow:0 10px 30px rgba(29,39,51,.08);
+  --aac-radius:14px;
+  --aac-sticky-h:112px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--aac-ink);
+  background:var(--aac-paper);
+  line-height:1.75;
+  font-size:16px;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;}
+p{margin:0 0 1em;}
+ul{margin:0;padding:0;list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+.aac-container{width:min(1180px,92vw);margin:0 auto;}
+
+/* ---------- sticky header block ---------- */
+.aac-topbar{
+  background:linear-gradient(90deg,var(--aac-blue-deep),var(--aac-blue));
+  color:#eaf0f7;
+  font-size:13px;
+}
+.aac-topbar .aac-container{
+  display:flex;align-items:center;gap:14px;
+  min-height:40px;flex-wrap:wrap;
+  padding:4px 0;
+}
+.aac-topbar-tag{
+  background:var(--aac-amber);color:#2b1d08;
+  font-weight:700;border-radius:999px;
+  padding:1px 10px;font-size:12px;flex:none;
+}
+.aac-topbar-text{flex:1 1 320px;min-width:0;}
+.aac-topbar-text strong{color:#fff;}
+.aac-topbar-link{
+  flex:none;border:1px solid rgba(234,240,247,.5);
+  border-radius:999px;padding:2px 12px;font-size:12px;
+  transition:.2s;
+}
+.aac-topbar-link:hover{background:rgba(255,255,255,.14);}
+
+.aac-header-wrap{
+  position:sticky;top:0;z-index:80;
+}
+.aac-siteheader{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--aac-line);
+  box-shadow:0 4px 18px rgba(29,39,51,.05);
+}
+.aac-header-inner{
+  display:flex;align-items:center;gap:22px;
+  min-height:72px;flex-wrap:wrap;
+}
+.aac-brand{display:flex;align-items:center;gap:10px;flex:none;}
+.aac-brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(140deg,var(--aac-blue),var(--aac-blue-deep));
+  display:grid;place-items:center;flex:none;
+}
+.aac-brand-mark svg{width:18px;height:18px;}
+.aac-brand-name{font-size:20px;font-weight:800;letter-spacing:.02em;}
+.aac-brand-sub{display:block;font-size:11px;color:var(--aac-ink-soft);font-weight:400;letter-spacing:.08em;line-height:1.2;}
+.aac-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto;}
+.aac-nav a{
+  padding:7px 12px;border-radius:999px;font-size:14.5px;
+  color:var(--aac-ink-soft);transition:.2s;white-space:nowrap;
+}
+.aac-nav a:hover{background:var(--aac-blue-pale);color:var(--aac-blue-deep);}
+.aac-nav-toggle{
+  display:none;background:none;border:1px solid var(--aac-line);
+  border-radius:10px;width:42px;height:42px;font-size:20px;
+  color:var(--aac-blue);margin-left:auto;
+}
+.aac-search{
+  position:relative;flex:none;display:flex;align-items:center;
+  border:1px solid var(--aac-line);border-radius:999px;
+  padding:3px 4px 3px 14px;background:var(--aac-paper);
+  transition:.2s;
+}
+.aac-search:focus-within{border-color:var(--aac-blue);background:#fff;box-shadow:0 0 0 3px rgba(47,74,99,.1);}
+.aac-search input{
+  border:none;background:none;outline:none;width:150px;
+  font-size:14px;color:var(--aac-ink);padding:6px 0;
+}
+.aac-search button{
+  border:none;background:var(--aac-blue);color:#fff;
+  border-radius:999px;padding:6px 14px;font-size:13px;transition:.2s;
+}
+.aac-search button:hover{background:var(--aac-blue-deep);}
+.aac-search-feedback{
+  position:absolute;left:0;right:0;top:calc(100% + 8px);
+  background:#fff;border:1px solid var(--aac-line);border-radius:12px;
+  box-shadow:var(--aac-shadow);padding:10px 14px;font-size:13px;
+  color:var(--aac-ink-soft);display:none;z-index:90;
+}
+.aac-search-feedback.aac-show{display:block;}
+
+/* ---------- generic section ---------- */
+.aac-section{padding:66px 0;scroll-margin-top:var(--aac-sticky-h);}
+.aac-section-alt{background:#fff;}
+.aac-section-head{max-width:760px;margin-bottom:34px;}
+.aac-eyebrow{
+  display:inline-block;font-size:12.5px;letter-spacing:.16em;
+  color:var(--aac-amber);font-weight:700;margin-bottom:10px;
+  border-left:3px solid var(--aac-amber);padding-left:8px;
+}
+.aac-section-head h2{font-size:clamp(23px,3vw,32px);color:var(--aac-blue-deep);margin-bottom:10px;}
+.aac-section-head p{color:var(--aac-ink-soft);font-size:15.5px;margin:0;}
+
+/* ---------- hero ---------- */
+.aac-hero{
+  background:linear-gradient(160deg,#eef3f9 0%,#f7f8fa 55%,#f3ede2 100%);
+  padding:58px 0 64px;scroll-margin-top:var(--aac-sticky-h);
+  overflow:hidden;
+}
+.aac-hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;
+}
+.aac-hero-label{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--aac-line);border-radius:999px;
+  padding:5px 14px;font-size:12.5px;color:var(--aac-blue-deep);
+  font-weight:600;letter-spacing:.04em;margin-bottom:18px;
+}
+.aac-hero-label i{width:7px;height:7px;border-radius:50%;background:var(--aac-amber);display:block;}
+.aac-hero h1{
+  font-size:clamp(34px,5.2vw,54px);
+  color:var(--aac-blue-deep);letter-spacing:.01em;line-height:1.15;
+  margin-bottom:14px;
+}
+.aac-hero h1 em{font-style:normal;color:var(--aac-amber);}
+.aac-hero-slogan{
+  font-size:clamp(16px,2vw,19px);color:var(--aac-ink-soft);
+  font-weight:600;margin-bottom:16px;
+}
+.aac-hero-desc{
+  color:var(--aac-ink-soft);font-size:15px;max-width:56ch;margin-bottom:24px;
+}
+.aac-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
+.aac-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  border-radius:999px;padding:11px 24px;font-size:15px;font-weight:600;
+  border:1px solid transparent;transition:.22s;
+}
+.aac-btn-primary{background:var(--aac-blue);color:#fff;box-shadow:0 8px 20px rgba(47,74,99,.24);}
+.aac-btn-primary:hover{background:var(--aac-blue-deep);transform:translateY(-2px);}
+.aac-btn-ghost{background:#fff;color:var(--aac-blue-deep);border-color:var(--aac-line);}
+.aac-btn-ghost:hover{border-color:var(--aac-blue);color:var(--aac-blue);}
+.aac-hero-stats{display:flex;gap:30px;flex-wrap:wrap;}
+.aac-stat b{display:block;font-size:26px;color:var(--aac-blue-deep);line-height:1.2;}
+.aac-stat span{font-size:13px;color:var(--aac-ink-soft);}
+.aac-hero-visual{position:relative;}
+.aac-hero-visual .aac-hero-frame{
+  border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(34,56,76,.2);
+  border:6px solid #fff;position:relative;aspect-ratio:16/10;background:#dfe7f1;
+}
+.aac-hero-frame img{width:100%;height:100%;object-fit:cover;}
+.aac-hero-badge{
+  position:absolute;left:-14px;bottom:20px;background:#fff;border-radius:14px;
+  padding:12px 18px;box-shadow:var(--aac-shadow);font-size:13px;color:var(--aac-ink-soft);
+  display:flex;align-items:center;gap:10px;
+}
+.aac-hero-badge b{color:var(--aac-blue-deep);font-size:17px;display:block;line-height:1.25;}
+.aac-hero-badge .aac-dot{width:9px;height:9px;border-radius:50%;background:#3fa370;box-shadow:0 0 0 4px rgba(63,163,112,.18);}
+
+/* ---------- about / intro ---------- */
+.aac-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start;}
+.aac-about-body p{color:var(--aac-ink-soft);font-size:15.5px;}
+.aac-about-body h3{color:var(--aac-blue-deep);font-size:19px;margin:26px 0 10px;}
+.aac-about-aside{display:grid;gap:16px;}
+.aac-about-card{
+  background:#fff;border:1px solid var(--aac-line);border-radius:var(--aac-radius);
+  padding:22px 24px;box-shadow:var(--aac-shadow);
+}
+.aac-about-card h4{color:var(--aac-blue-deep);font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+.aac-about-card h4 .aac-chip{
+  font-size:11px;background:var(--aac-amber-soft);color:#8a5a12;
+  border-radius:6px;padding:1px 8px;font-weight:600;
+}
+.aac-about-card p{font-size:14px;color:var(--aac-ink-soft);margin:0;}
+.aac-tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+.aac-tag{
+  font-size:12.5px;padding:4px 12px;border-radius:999px;
+  background:var(--aac-blue-pale);color:var(--aac-blue-deep);font-weight:500;
+}
+.aac-tag.aac-amber{background:var(--aac-amber-soft);color:#8a5a12;}
+
+/* ---------- focus ---------- */
+.aac-focus-grid{
+  display:grid;grid-template-columns:1.35fr 1fr;gap:24px;
+}
+.aac-video-card{
+  background:#fff;border-radius:var(--aac-radius);overflow:hidden;
+  border:1px solid var(--aac-line);box-shadow:0 4px 14px rgba(29,39,51,.05);
+  transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;
+}
+.aac-video-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(29,39,51,.12);}
+.aac-thumb{
+  position:relative;aspect-ratio:16/9;background:#dfe7f1;overflow:hidden;
+}
+.aac-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.aac-video-card:hover .aac-thumb img{transform:scale(1.05);}
+.aac-thumb::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(20,30,42,0) 45%,rgba(20,30,42,.55) 100%);
+}
+.aac-thumb-label{
+  position:absolute;top:10px;left:10px;z-index:2;
+  background:rgba(255,255,255,.92);color:var(--aac-blue-deep);
+  font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;
+}
+.aac-thumb-dur{
+  position:absolute;right:10px;bottom:10px;z-index:2;
+  background:rgba(20,30,42,.7);color:#fff;font-size:11.5px;
+  padding:2px 8px;border-radius:6px;
+}
+.aac-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.9);
+  display:grid;place-items:center;z-index:2;transition:.25s;
+}
+.aac-play svg{width:18px;height:18px;margin-left:3px;}
+.aac-video-card:hover .aac-play{background:var(--aac-amber);transform:translate(-50%,-50%) scale(1.08);}
+.aac-video-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.aac-video-body h3{font-size:16.5px;color:var(--aac-blue-deep);}
+.aac-video-card.aac-focus-main .aac-video-body h3{font-size:21px;}
+.aac-video-meta{font-size:13px;color:var(--aac-ink-soft);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;}
+.aac-video-desc{font-size:13.5px;color:var(--aac-ink-soft);margin:0;}
+.aac-video-foot{
+  margin-top:auto;display:flex;align-items:center;gap:10px;padding-top:10px;
+  border-top:1px solid var(--aac-line);font-size:12.5px;color:var(--aac-ink-soft);
+}
+.aac-avatar{
+  width:28px;height:28px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;
+}
+.aac-video-foot .aac-avatar{width:24px;height:24px;font-size:10.5px;}
+.aac-op{margin-left:auto;display:flex;gap:6px;}
+.aac-icon-btn{
+  background:none;border:1px solid var(--aac-line);border-radius:999px;
+  font-size:12px;padding:3px 10px;color:var(--aac-ink-soft);
+  display:inline-flex;align-items:center;gap:5px;transition:.2s;line-height:1.5;
+}
+.aac-icon-btn:hover{border-color:var(--aac-blue);color:var(--aac-blue);}
+.aac-icon-btn.aac-on{background:var(--aac-amber-soft);border-color:var(--aac-amber);color:#8a5a12;}
+.aac-focus-side{display:grid;gap:16px;grid-template-rows:repeat(3,1fr);}
+.aac-focus-side .aac-video-card{flex-direction:row;}
+.aac-focus-side .aac-thumb{width:170px;flex:none;aspect-ratio:4/3;}
+.aac-focus-side .aac-thumb::after{background:linear-gradient(180deg,rgba(20,30,42,0) 50%,rgba(20,30,42,.4) 100%);}
+.aac-focus-side .aac-play{width:38px;height:38px;}
+.aac-focus-side .aac-play svg{width:13px;height:13px;}
+.aac-focus-side .aac-video-body{padding:12px 14px;gap:6px;}
+.aac-focus-side .aac-video-body h3{font-size:14.5px;}
+.aac-focus-side .aac-video-desc{display:none;}
+
+/* ---------- video stream ---------- */
+.aac-stream-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+.aac-filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;}
+.aac-filter{
+  background:#fff;border:1px solid var(--aac-line);border-radius:999px;
+  padding:6px 16px;font-size:13.5px;color:var(--aac-ink-soft);transition:.2s;
+}
+.aac-filter:hover{border-color:var(--aac-blue);color:var(--aac-blue);}
+.aac-filter.aac-active{background:var(--aac-blue);border-color:var(--aac-blue);color:#fff;}
+
+/* ---------- topics ---------- */
+.aac-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.aac-topic{
+  border-radius:var(--aac-radius);overflow:hidden;position:relative;
+  min-height:230px;display:flex;align-items:flex-end;
+  border:1px solid var(--aac-line);box-shadow:var(--aac-shadow);
+}
+.aac-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.aac-topic-body{
+  position:relative;z-index:2;padding:20px;color:#fff;width:100%;
+  background:linear-gradient(180deg,rgba(20,30,42,0),rgba(20,30,42,.86));
+}
+.aac-topic-body h3{font-size:18px;margin-bottom:6px;}
+.aac-topic-body p{font-size:13px;margin:0 0 10px;opacity:.9;}
+.aac-topic-status{
+  font-size:11.5px;background:rgba(255,255,255,.9);color:var(--aac-blue-deep);
+  border-radius:999px;padding:2px 10px;font-weight:700;display:inline-block;
+}
+
+/* ---------- authors ---------- */
+.aac-author-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.aac-author-card{
+  background:#fff;border:1px solid var(--aac-line);border-radius:var(--aac-radius);
+  padding:24px 20px;text-align:center;transition:.25s;box-shadow:0 4px 14px rgba(29,39,51,.05);
+}
+.aac-author-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(29,39,51,.12);}
+.aac-author-card .aac-avatar{
+  width:64px;height:64px;font-size:24px;margin:0 auto 14px;
+  box-shadow:0 6px 16px rgba(29,39,51,.16);
+}
+.aac-author-card h3{font-size:17px;color:var(--aac-blue-deep);margin-bottom:4px;}
+.aac-author-field{font-size:12.5px;color:var(--aac-amber);font-weight:700;margin-bottom:10px;display:block;}
+.aac-author-card p{font-size:13px;color:var(--aac-ink-soft);margin:0 0 12px;min-height:60px;}
+.aac-author-nums{display:flex;justify-content:center;gap:18px;font-size:12px;color:var(--aac-ink-soft);margin-bottom:14px;}
+.aac-author-nums b{display:block;color:var(--aac-blue-deep);font-size:15px;}
+
+/* ---------- stories ---------- */
+.aac-story-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:22px;}
+.aac-story{
+  background:#fff;border-radius:var(--aac-radius);border:1px solid var(--aac-line);
+  padding:24px;box-shadow:0 4px 14px rgba(29,39,51,.05);
+  display:flex;flex-direction:column;
+}
+.aac-story.aac-story-main{background:linear-gradient(155deg,var(--aac-blue-deep),var(--aac-blue));color:#eaf0f7;border:none;}
+.aac-story.aac-story-main h3{color:#fff;}
+.aac-story h3{font-size:17.5px;color:var(--aac-blue-deep);margin-bottom:10px;}
+.aac-story p{font-size:14px;color:var(--aac-ink-soft);}
+.aac-story.aac-story-main p{color:#cdd9e6;}
+.aac-story-meta{font-size:12.5px;color:var(--aac-ink-soft);margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;gap:10px;}
+.aac-story.aac-story-main .aac-story-meta{color:#a9bdd2;}
+
+/* ---------- gallery ---------- */
+.aac-gallery{
+  display:grid;grid-template-columns:repeat(6,1fr);
+  grid-auto-rows:110px;gap:14px;
+}
+.aac-gal-item{
+  position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--aac-line);
+  background:#dfe7f1;
+}
+.aac-gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.aac-gal-item:hover img{transform:scale(1.06);}
+.aac-gal-item span{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 12px 8px;
+  font-size:12px;color:#fff;background:linear-gradient(180deg,transparent,rgba(20,30,42,.8));
+}
+.aac-gal-a{grid-column:span 2;grid-row:span 2;}
+.aac-gal-b{grid-column:span 2;grid-row:span 1;}
+.aac-gal-c{grid-column:span 1;grid-row:span 1;}
+.aac-gal-d{grid-column:span 1;grid-row:span 1;}
+
+/* ---------- reviews ---------- */
+.aac-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.aac-review{
+  background:#fff;border:1px solid var(--aac-line);border-radius:var(--aac-radius);
+  padding:20px;box-shadow:0 4px 14px rgba(29,39,51,.05);display:flex;gap:12px;
+}
+.aac-review .aac-avatar{width:36px;height:36px;font-size:13px;}
+.aac-review-body{flex:1;min-width:0;}
+.aac-review-body h4{font-size:14px;color:var(--aac-blue-deep);margin-bottom:4px;display:flex;justify-content:space-between;gap:8px;align-items:center;}
+.aac-review-body h4 span{font-size:11px;color:#c9982f;letter-spacing:1px;}
+.aac-review-body p{font-size:13.5px;color:var(--aac-ink-soft);margin:0;}
+
+/* ---------- dynamics & partners ---------- */
+.aac-split{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start;}
+.aac-timeline{position:relative;padding-left:24px;border-left:2px solid var(--aac-line);}
+.aac-timeline li{position:relative;padding-bottom:24px;}
+.aac-timeline li:last-child{padding-bottom:0;}
+.aac-timeline li::before{
+  content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;
+  border-radius:50%;background:#fff;border:3px solid var(--aac-blue);
+}
+.aac-timeline h4{font-size:15.5px;color:var(--aac-blue-deep);margin-bottom:4px;}
+.aac-timeline time{font-size:12px;color:var(--aac-amber);font-weight:700;letter-spacing:.04em;}
+.aac-timeline p{font-size:13.5px;color:var(--aac-ink-soft);margin:4px 0 0;}
+.aac-partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.aac-partner{
+  background:#fff;border:1px solid var(--aac-line);border-radius:12px;
+  min-height:76px;display:grid;place-items:center;text-align:center;
+  font-size:13.5px;color:var(--aac-blue-deep);font-weight:600;padding:10px;
+  transition:.2s;
+}
+.aac-partner:hover{border-color:var(--aac-blue);box-shadow:var(--aac-shadow);transform:translateY(-2px);}
+
+/* ---------- faq ---------- */
+.aac-faq{max-width:880px;margin:0 auto;}
+.aac-faq details{
+  background:#fff;border:1px solid var(--aac-line);border-radius:12px;
+  margin-bottom:12px;overflow:hidden;
+}
+.aac-faq summary{
+  list-style:none;cursor:pointer;padding:16px 20px;font-weight:600;
+  color:var(--aac-blue-deep);font-size:15px;display:flex;justify-content:space-between;gap:14px;
+}
+.aac-faq summary::-webkit-details-marker{display:none;}
+.aac-faq summary::after{content:"+";font-size:20px;color:var(--aac-amber);line-height:1;flex:none;}
+.aac-faq details[open] summary::after{content:"−";}
+.aac-faq details p{padding:0 20px 18px;font-size:14px;color:var(--aac-ink-soft);margin:0;}
+
+/* ---------- contact ---------- */
+.aac-contact-band{
+  background:linear-gradient(150deg,var(--aac-blue-deep),#2a435b 60%,#36516b);
+  color:#eaf0f7;border-radius:20px;padding:44px;
+  display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;
+}
+.aac-contact-band h2{color:#fff;font-size:clamp(22px,3vw,30px);margin-bottom:12px;}
+.aac-contact-band p{color:#c9d7e5;font-size:14.5px;margin-bottom:0;}
+.aac-contact-list{display:grid;gap:12px;font-size:14px;}
+.aac-contact-list li{display:flex;gap:10px;align-items:flex-start;color:#dbe6f0;}
+.aac-contact-list b{color:#fff;flex:none;font-weight:600;}
+.aac-contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}
+.aac-btn-amber{background:var(--aac-amber);color:#2b1d08;box-shadow:0 8px 20px rgba(224,160,74,.3);}
+.aac-btn-amber:hover{background:#f0b260;transform:translateY(-2px);}
+.aac-contact-band .aac-btn-ghost{background:transparent;color:#eaf0f7;border-color:rgba(234,240,247,.45);}
+.aac-contact-band .aac-btn-ghost:hover{border-color:#fff;color:#fff;}
+
+/* ---------- footer ---------- */
+.aac-footer{background:#1a2531;color:#9fb1c4;padding:54px 0 26px;margin-top:66px;font-size:13.5px;}
+.aac-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;margin-bottom:34px;}
+.aac-footer h4{color:#e5edf5;font-size:14.5px;margin-bottom:14px;}
+.aac-footer li{margin-bottom:9px;}
+.aac-footer a:hover{color:var(--aac-amber);}
+.aac-footer-brand .aac-brand-name{color:#fff;}
+.aac-footer-brand p{font-size:13px;color:#8ea2b6;margin-top:10px;max-width:34ch;}
+.aac-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12.5px;color:#7b90a5;
+}
+
+/* ---------- back to top ---------- */
+.aac-totop{
+  position:fixed;right:22px;bottom:22px;z-index:90;
+  width:46px;height:46px;border-radius:50%;border:none;
+  background:var(--aac-blue);color:#fff;font-size:18px;
+  box-shadow:0 10px 24px rgba(34,56,76,.3);
+  opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s;
+}
+.aac-totop.aac-show{opacity:1;pointer-events:auto;transform:none;}
+.aac-totop:hover{background:var(--aac-blue-deep);}
+
+/* ---------- toast & modal ---------- */
+.aac-toast{
+  position:fixed;left:50%;bottom:40px;transform:translate(-50%,20px);
+  background:#1d2733;color:#fff;padding:11px 22px;border-radius:999px;
+  font-size:14px;z-index:200;opacity:0;pointer-events:none;transition:.3s;
+  box-shadow:0 12px 30px rgba(0,0,0,.25);max-width:86vw;text-align:center;
+}
+.aac-toast.aac-show{opacity:1;transform:translate(-50%,0);}
+.aac-modal-mask{
+  position:fixed;inset:0;background:rgba(20,30,42,.55);z-index:150;
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.aac-modal-mask.aac-show{display:flex;}
+.aac-modal{
+  background:#fff;border-radius:18px;max-width:480px;width:100%;
+  padding:28px;box-shadow:0 30px 70px rgba(0,0,0,.3);max-height:86vh;overflow:auto;
+}
+.aac-modal h3{color:var(--aac-blue-deep);font-size:19px;margin-bottom:12px;}
+.aac-modal p{font-size:14px;color:var(--aac-ink-soft);}
+.aac-modal .aac-form-row{margin-bottom:12px;}
+.aac-modal label{font-size:13px;color:var(--aac-ink-soft);display:block;margin-bottom:4px;}
+.aac-modal input,.aac-modal textarea{
+  width:100%;border:1px solid var(--aac-line);border-radius:10px;
+  padding:9px 12px;font-family:inherit;font-size:14px;outline:none;resize:vertical;
+}
+.aac-modal input:focus,.aac-modal textarea:focus{border-color:var(--aac-blue);box-shadow:0 0 0 3px rgba(47,74,99,.12);}
+.aac-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:16px;flex-wrap:wrap;}
+
+/* ---------- responsive ---------- */
+@media (max-width:1024px){
+  .aac-hero-grid,.aac-about-grid,.aac-split,.aac-contact-band{grid-template-columns:1fr;}
+  .aac-focus-grid{grid-template-columns:1fr;}
+  .aac-focus-side{grid-template-rows:none;grid-template-columns:repeat(3,1fr);}
+  .aac-focus-side .aac-video-card{flex-direction:column;}
+  .aac-focus-side .aac-thumb{width:100%;aspect-ratio:16/9;}
+  .aac-stream-grid,.aac-topic-grid,.aac-review-grid{grid-template-columns:repeat(2,1fr);}
+  .aac-author-grid{grid-template-columns:repeat(2,1fr);}
+  .aac-story-grid{grid-template-columns:1fr 1fr;}
+  .aac-story-main{grid-column:span 2;}
+  .aac-footer-grid{grid-template-columns:1fr 1fr;}
+  .aac-gallery{grid-template-columns:repeat(4,1fr);}
+}
+@media (max-width:760px){
+  .aac-nav-toggle{display:block;}
+  .aac-nav{
+    display:none;flex-direction:column;width:100%;margin-left:0;
+    padding:10px 0 16px;gap:2px;
+  }
+  .aac-nav.aac-open{display:flex;}
+  .aac-nav a{padding:10px 12px;border-radius:10px;}
+  .aac-search{order:5;width:100%;margin-left:0;}
+  .aac-search input{width:100%;}
+  .aac-header-inner{gap:12px;padding:10px 0;}
+  .aac-stream-grid,.aac-topic-grid,.aac-review-grid{grid-template-columns:1fr;}
+  .aac-focus-side{grid-template-columns:1fr;}
+  .aac-author-grid{grid-template-columns:1fr;}
+  .aac-story-grid{grid-template-columns:1fr;}
+  .aac-story-main{grid-column:auto;}
+  .aac-footer-grid{grid-template-columns:1fr;}
+  .aac-contact-band{padding:28px;}
+  .aac-gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px;}
+  .aac-gal-a,.aac-gal-b{grid-column:span 1;grid-row:span 1;}
+  .aac-hero-stats{gap:22px;}
+  .aac-hero-badge{left:0;bottom:10px;padding:8px 12px;font-size:12px;}
+  .aac-section{padding:48px 0;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="aac-header-wrap">
+  <div class="aac-topbar">
+    <div class="aac-container">
+      <span class="aac-topbar-tag">官方发布</span>
+      <span class="aac-topbar-text"><strong>新专题上线：</strong>「三十以后的生活现场」第一季 6 集已更新，同步开启内容共创征集。</span>
+      <a class="aac-topbar-link" href="#aac-topic">查看专题</a>
+    </div>
+  </div>
+  <header class="aac-siteheader">
+    <div class="aac-container aac-header-inner">
+      <a class="aac-brand" href="#aac-home">
+        <span class="aac-brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 6 L18 12 L8 18 Z" fill="#f2b95c"/></svg>
+        </span>
+        <span>
+          <span class="aac-brand-name">亚洲成年人</span>
+          <span class="aac-brand-sub">ADULT LIFE · VIDEO</span>
+        </span>
+      </a>
+      <button class="aac-nav-toggle" id="aacNavToggle" aria-label="展开导航" aria-expanded="false">☰</button>
+      <nav class="aac-nav" id="aacNav" aria-label="主导航">
+        <a href="#aac-home">首页</a>
+        <a href="#aac-focus">焦点视频</a>
+        <a href="#aac-topic">专题企划</a>
+        <a href="#aac-authors">创作者</a>
+        <a href="#aac-story">故事随笔</a>
+        <a href="#aac-gallery">影像墙</a>
+        <a href="#aac-news">企业动态</a>
+        <a href="#aac-faq">帮助</a>
+        <a href="#aac-contact">联系</a>
+      </nav>
+      <div class="aac-search">
+        <input type="search" id="aacSearchInput" placeholder="搜索视频、创作者、话题" aria-label="站内搜索">
+        <button type="button" id="aacSearchBtn">搜索</button>
+        <div class="aac-search-feedback" id="aacSearchFeedback"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- 首屏 -->
+  <section class="aac-hero" id="aac-home">
+    <div class="aac-container aac-hero-grid">
+      <div>
+        <span class="aac-hero-label"><i></i>品牌官网 · 原创高清影像社区</span>
+        <h1>亚洲成年人 <em>真实生活的影像现场</em></h1>
+        <p class="aac-hero-slogan">一家持续运营的成人生活视频品牌，用镜头记录每一个普通人的不普通日常。</p>
+        <p class="aac-hero-desc">作为深耕成人生活内容领域的品牌平台，亚洲成年人官方网站以原创、正版、高清的视频内容为核心，围绕职场、家庭、情感、健康与成长搭建内容生态，为创作者提供稳定的展示空间，为观众提供值得信赖的观察视角。</p>
+        <div class="aac-hero-actions">
+          <a class="aac-btn aac-btn-primary" href="#aac-focus">浏览焦点内容</a>
+          <a class="aac-btn aac-btn-ghost" href="#aac-authors">认识创作者</a>
+          <button class="aac-btn aac-btn-ghost" type="button" id="aacShareTop">分享本页</button>
+        </div>
+        <div class="aac-hero-stats">
+          <div class="aac-stat"><b>4,200+</b><span>原创视频条目</span></div>
+          <div class="aac-stat"><b>186</b><span>签约创作者</span></div>
+          <div class="aac-stat"><b>9.2</b><span>用户口碑评分</span></div>
+        </div>
+      </div>
+      <div class="aac-hero-visual">
+        <div class="aac-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f4a63'/%3E%3Cstop offset='1' stop-color='%235d7f9e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Ccircle cx='620' cy='120' r='90' fill='%23e0a04a' opacity='.35'/%3E%3Ccircle cx='150' cy='400' r='130' fill='%23ffffff' opacity='.07'/%3E%3Cpath d='M0 380 Q200 300 400 360 T800 320 V500 H0 Z' fill='%23f2b95c' opacity='.25'/%3E%3Cpath d='M0 430 Q220 370 430 420 T800 400 V500 H0 Z' fill='%23ffffff' opacity='.12'/%3E%3Crect x='330' y='200' width='140' height='140' rx='20' fill='none' stroke='%23ffffff' stroke-width='3' opacity='.3'/%3E%3Cpath d='M380 240 L450 270 L380 300 Z' fill='%23ffffff' opacity='.85'/%3E%3Ctext x='400' y='440' text-anchor='middle' font-family='sans-serif' font-size='26' fill='%23ffffff' opacity='.9'%3E成年人的日常，值得被认真记录%3C/text%3E%3C/svg%3E" alt="亚洲成年人品牌主视觉：深蓝色调的城市生活影像主题画面">
+        </div>
+        <div class="aac-hero-badge">
+          <span class="aac-dot"></span>
+          <span><b>本周更新 38 条</b>持续运营 · 官方出品</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌介绍 / 深度解析 -->
+  <section class="aac-section aac-section-alt" id="aac-about">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">品牌故事 · 深度解析</span>
+        <h2>关于亚洲成年人：我们如何理解成年人的生活</h2>
+        <p>从一间影像工作室到一个内容社区，亚洲成年人的官方网站记录了自己与用户共同成长的过程。</p>
+      </div>
+      <div class="aac-about-grid">
+        <div class="aac-about-body">
+          <p>亚洲成年人成立于 2018 年，是一家专注于成人生活影像的原创内容品牌。我们最初的动机很朴素：在信息极度丰富的时代，成年人的真实处境反而很少被完整讲述。工作压力、亲密关系、家庭责任、身体状态、财务规划，这些具体而沉重的议题，常常被包装成技巧与口号。亚洲成年人希望提供另一种可能——用更长的镜头、更慢的节奏，把成年人生活中的犹豫、选择与坚持记录下来。</p>
+          <h3>从记录出发的内容生态</h3>
+          <p>品牌官方网站上线以来，我们持续运营了多条内容线：人物访谈、生活实验、职场观察、健康纪实与家庭影像。每一条视频都由编辑团队与创作者共同完成前期调研、现场拍摄与后期打磨，坚持原创与正版，坚持高清画质与真实情绪。我们相信，品质不是滤镜，而是对所记录对象的尊重。</p>
+          <p>在亚洲成年人，创作者不是流水线上的供给者，而是内容生态的共同建造者。我们建立了选题共研、拍摄支持、版权保护与收益分成的完整机制，让认真做内容的人能够被看见，也能获得体面的回报。目前平台已签约 186 位创作者，覆盖心理咨询、职业发展、烹饪、运动康复、手作、城市探索等多个垂直领域。</p>
+          <h3>为什么叫「亚洲成年人」</h3>
+          <p>“成年人”不是一个年龄标签，而是一种状态：开始为自己的选择负责，开始理解他人的不易，也开始学会在有限的条件里搭建生活。亚洲成年人的内容视角扎根于东亚社会的现实语境——高密度城市、代际关系、职场文化、独居与家庭并存。我们希望这些影像能给观众带来陪伴感，也带来一点力量。</p>
+          <p>作为一家重视社会责任的品牌，我们每年投入固定资源制作公益主题影像，关注心理健康、照护者处境与终身学习。我们相信，真实的内容自有影响力，而持续运营的社区，才是品牌最值得信赖的资产。</p>
+        </div>
+        <div class="aac-about-aside">
+          <div class="aac-about-card">
+            <h4>品牌关键词 <span class="aac-chip">官方</span></h4>
+            <p>原创 · 正版 · 高清 · 真实 · 陪伴 · 成长 · 匠心</p>
+            <div class="aac-tag-row">
+              <span class="aac-tag">人物访谈</span>
+              <span class="aac-tag">职场观察</span>
+              <span class="aac-tag aac-amber">家庭影像</span>
+              <span class="aac-tag">健康纪实</span>
+              <span class="aac-tag aac-amber">城市生活</span>
+              <span class="aac-tag">手作日常</span>
+            </div>
+          </div>
+          <div class="aac-about-card">
+            <h4>我们坚持的三件事</h4>
+            <p>一，不制造焦虑，只呈现处境；二，尊重每一位出镜者的表达边界；三，把内容质量放在增长速度之前。</p>
+          </div>
+          <div class="aac-about-card">
+            <h4>内容生态数据</h4>
+            <p>累计合作创作者 186 位，自制专题 42 个，用户投稿 5,600 余条，社区日均互动 2.3 万次。数据持续更新，官方发布。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点视频 -->
+  <section class="aac-section" id="aac-focus">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">焦点内容</span>
+        <h2>本周焦点：值得花时间看完的六条影像</h2>
+        <p>编辑部从近期更新中挑出重点内容，涵盖访谈、纪实与生活实验，均为平台原创出品。</p>
+      </div>
+      <div class="aac-focus-grid">
+        <article class="aac-video-card aac-focus-main">
+          <div class="aac-thumb">
+            <span class="aac-thumb-label">本周主推</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322384c'/%3E%3Cstop offset='1' stop-color='%23476178'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Crect x='80' y='90' width='260' height='270' rx='10' fill='%23e0a04a' opacity='.85'/%3E%3Crect x='380' y='140' width='200' height='220' rx='10' fill='%23ffffff' opacity='.16'/%3E%3Crect x='610' y='110' width='120' height='250' rx='10' fill='%23ffffff' opacity='.3'/%3E%3Ccircle cx='210' cy='180' r='46' fill='%2322384c'/%3E%3Cpath d='M160 360 Q210 280 260 360 Z' fill='%2322384c'/%3E%3Ctext x='400' y='418' text-anchor='middle' font-family='sans-serif' font-size='22' fill='%23ffffff' opacity='.85'%3E访谈实录 · 四十岁重新开始%3C/text%3E%3C/svg%3E" alt="焦点视频封面：四十岁重新开始的访谈实录，深蓝色调人物剪影">
+            <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+            <span class="aac-thumb-dur">28:14</span>
+          </div>
+          <div class="aac-video-body">
+            <h3>四十岁重新开始：三位中年人的职业转向实录</h3>
+            <div class="aac-video-meta"><span>人物访谈</span><span>2026-11-15</span><span>播放 12.8 万</span></div>
+            <p class="aac-video-desc">当稳定不再是唯一答案，三位普通人讲述了他们从零开始的真实代价与收获。没有励志滤镜，只有具体的账单、迟疑与深夜的决定。</p>
+            <div class="aac-video-foot">
+              <span class="aac-avatar" style="background:#2f4a63;">周</span>
+              <span>周叙白</span>
+              <div class="aac-op">
+                <button class="aac-icon-btn aac-like" type="button" data-base="12800">♡ <span>1.2万</span></button>
+                <button class="aac-icon-btn aac-fav" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="aac-focus-side">
+          <article class="aac-video-card">
+            <div class="aac-thumb">
+              <span class="aac-thumb-label">纪实</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3ede2'/%3E%3Ccircle cx='310' cy='80' r='56' fill='%23e0a04a' opacity='.6'/%3E%3Crect x='40' y='150' width='140' height='110' fill='%232f4a63' opacity='.85'/%3E%3Crect x='200' y='110' width='90' height='150' fill='%235d7f9e' opacity='.7'/%3E%3Cpath d='M40 150 L110 90 L180 150 Z' fill='%232f4a63'/%3E%3C/svg%3E" alt="短视频封面：凌晨四点的菜市场，暖色调手绘城市建筑">
+              <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+              <span class="aac-thumb-dur">09:42</span>
+            </div>
+            <div class="aac-video-body">
+              <h3>凌晨四点的菜市场：一座城市的早班人群</h3>
+              <p class="aac-video-desc">城市探索</p>
+              <div class="aac-video-foot">
+                <span class="aac-avatar" style="background:#5d7f9e;">陈</span>
+                <span>陈默</span>
+                <div class="aac-op"><button class="aac-icon-btn aac-like" type="button" data-base="6400">♡ <span>6400</span></button></div>
+              </div>
+            </div>
+          </article>
+          <article class="aac-video-card">
+            <div class="aac-thumb">
+              <span class="aac-thumb-label">实用</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e8eef6'/%3E%3Crect x='60' y='60' width='120' height='180' rx='8' fill='%232f4a63'/%3E%3Crect x='210' y='100' width='130' height='140' rx='8' fill='%23c9982f' opacity='.8'/%3E%3Ccircle cx='120' cy='100' r='26' fill='%23e8eef6'/%3E%3Cpath d='M250 130 h60 M250 160 h60 M250 190 h40' stroke='%23ffffff' stroke-width='4' opacity='.7'/%3E%3C/svg%3E" alt="短视频封面：家庭账本整理方法，冷调蓝灰几何图形">
+              <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+              <span class="aac-thumb-dur">14:05</span>
+            </div>
+            <div class="aac-video-body">
+              <h3>家庭账本怎么记：三个普通家庭的年度复盘</h3>
+              <p class="aac-video-desc">实用技巧</p>
+              <div class="aac-video-foot">
+                <span class="aac-avatar" style="background:#c9982f;">林</span>
+                <span>林一舟</span>
+                <div class="aac-op"><button class="aac-icon-btn aac-like" type="button" data-base="9200">♡ <span>9200</span></button></div>
+              </div>
+            </div>
+          </article>
+          <article class="aac-video-card">
+            <div class="aac-thumb">
+              <span class="aac-thumb-label">治愈</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23dbe9df'/%3E%3Ccircle cx='200' cy='150' r='90' fill='%23ffffff' opacity='.5'/%3E%3Cpath d='M120 210 Q200 90 280 210 Z' fill='%234f7a5c' opacity='.7'/%3E%3Ccircle cx='200' cy='130' r='30' fill='%23e0a04a' opacity='.85'/%3E%3Cpath d='M60 250 H340' stroke='%234f7a5c' stroke-width='5' opacity='.4'/%3E%3C/svg%3E" alt="短视频封面：周末独处的十二件小事，自然绿色治愈系插画">
+              <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+              <span class="aac-thumb-dur">06:30</span>
+            </div>
+            <div class="aac-video-body">
+              <h3>周末独处的十二件小事：把日子过慢一点</h3>
+              <p class="aac-video-desc">生活方式</p>
+              <div class="aac-video-foot">
+                <span class="aac-avatar" style="background:#4f7a5c;">苏</span>
+                <span>苏望</span>
+                <div class="aac-op"><button class="aac-icon-btn aac-like" type="button" data-base="15700">♡ <span>1.5万</span></button></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频流 -->
+  <section class="aac-section aac-section-alt" id="aac-stream">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">热门视频流</span>
+        <h2>正在被观看的成人生活切片</h2>
+        <p>挑选你关心的议题，标签筛选会即时更新内容列表，所有条目均来自平台创作者。</p>
+      </div>
+      <div class="aac-filter-row" id="aacFilterRow">
+        <button class="aac-filter aac-active" type="button" data-tag="全部">全部</button>
+        <button class="aac-filter" type="button" data-tag="职场">职场</button>
+        <button class="aac-filter" type="button" data-tag="家庭">家庭</button>
+        <button class="aac-filter" type="button" data-tag="健康">健康</button>
+        <button class="aac-filter" type="button" data-tag="情感">情感</button>
+        <button class="aac-filter" type="button" data-tag="技能">技能</button>
+      </div>
+      <div class="aac-stream-grid" id="aacStreamGrid">
+        <article class="aac-video-card" data-tag="职场">
+          <div class="aac-thumb">
+            <span class="aac-thumb-label">职场</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%232f4a63'/%3E%3Crect x='40' y='70' width='120' height='110' rx='6' fill='%23ffffff' opacity='.16'/%3E%3Crect x='180' y='40' width='170' height='140' rx='6' fill='%23e0a04a' opacity='.55'/%3E%3Cpath d='M60 160 h80 M60 130 h60' stroke='%23ffffff' stroke-width='4' opacity='.55'/%3E%3C/svg%3E" alt="视频封面：三十岁转岗实录，深蓝办公场景几何构图">
+            <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+            <span class="aac-thumb-dur">17:20</span>
+          </div>
+          <div class="aac-video-body">
+            <h3>三十岁转岗实录：从稳定岗位走向不确定</h3>
+            <div class="aac-video-meta"><span>职场日常</span><span>播放 8.6 万</span></div>
+            <div class="aac-video-foot">
+              <span class="aac-avatar" style="background:#2f4a63;">周</span>
+              <span>周叙白</span>
+              <div class="aac-op">
+                <button class="aac-icon-btn aac-like" type="button" data-base="8600">♡ <span>8600</span></button>
+                <button class="aac-icon-btn aac-fav" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="aac-video-card" data-tag="家庭">
+          <div class="aac-thumb">
+            <span class="aac-thumb-label">家庭</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f7e8cf'/%3E%3Ccircle cx='110' cy='100' r='34' fill='%23e0a04a'/%3E%3Ccircle cx='190' cy='80' r='24' fill='%232f4a63' opacity='.75'/%3E%3Cpath d='M40 200 Q120 130 200 200 T380 190' stroke='%23c9982f' stroke-width='5' fill='none' opacity='.7'/%3E%3Crect x='250' y='80' width='100' height='90' rx='8' fill='%235d7f9e' opacity='.5'/%3E%3C/svg%3E" alt="视频封面：三代同住的餐桌，暖橙色家庭成员抽象图形">
+            <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+            <span class="aac-thumb-dur">22:48</span>
+          </div>
+          <div class="aac-video-body">
+            <h3>三代同住的餐桌：关于边界与照顾的一年记录</h3>
+            <div class="aac-video-meta"><span>家庭影像</span><span>播放 6.1 万</span></div>
+            <div class="aac-video-foot">
+              <span class="aac-avatar" style="background:#c9982f;">何</span>
+              <span>何岸</span>
+              <div class="aac-op">
+                <button class="aac-icon-btn aac-like" type="button" data-base="6100">♡ <span>6100</span></button>
+                <button class="aac-icon-btn aac-fav" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="aac-video-card" data-tag="健康">
+          <div class="aac-thumb">
+            <span class="aac-thumb-label">健康</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23dbe9df'/%3E%3Cpath d='M60 160 L110 90 L160 160' stroke='%234f7a5c' stroke-width='10' fill='none'/%3E%3Cpath d='M170 130 L220 60 L270 130' stroke='%23e0a04a' stroke-width='10' fill='none'/%3E%3Ccircle cx='330' cy='100' r='40' fill='%234f7a5c' opacity='.35'/%3E%3C/svg%3E" alt="视频封面：久坐族的肩颈康复练习，自然绿运动线条图示">
+            <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+            <span class="aac-thumb-dur">12:52</span>
+          </div>
+          <div class="aac-video-body">
+            <h3>久坐族的肩颈康复：康复师给的五个日常动作</h3>
+            <div class="aac-video-meta"><span>健康运动</span><span>播放 11.2 万</span></div>
+            <div class="aac-video-foot">
+              <span class="aac-avatar" style="background:#4f7a5c;">吴</span>
+              <span>吴青禾</span>
+              <div class="aac-op">
+                <button class="aac-icon-btn aac-like" type="button" data-base="11200">♡ <span>1.1万</span></button>
+                <button class="aac-icon-btn aac-fav" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="aac-video-card" data-tag="情感">
+          <div class="aac-thumb">
+            <span class="aac-thumb-label">情感</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23e6dcef'/%3E%3Cpath d='M200 180 C120 120 140 60 200 90 C260 60 280 120 200 180 Z' fill='%238a6aa0' opacity='.8'/%3E%3Ccircle cx='90' cy='70' r='26' fill='%23ffffff' opacity='.6'/%3E%3Ccircle cx='320' cy='160' r='34' fill='%23e0a04a' opacity='.5'/%3E%3C/svg%3E" alt="视频封面：成年人的告别练习，柔和粉紫心形图形">
+            <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+            <span class="aac-thumb-dur">15:36</span>
+          </div>
+          <div class="aac-video-body">
+            <h3>成年人的告别练习：那些没有说出口的话</h3>
+            <div class="aac-video-meta"><span>情感故事</span><span>播放 9.8 万</span></div>
+            <div class="aac-video-foot">
+              <span class="aac-avatar" style="background:#8a6aa0;">沈</span>
+              <span>沈知意</span>
+              <div class="aac-op">
+                <button class="aac-icon-btn aac-like" type="button" data-base="9800">♡ <span>9800</span></button>
+                <button class="aac-icon-btn aac-fav" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="aac-video-card" data-tag="技能">
+          <div class="aac-thumb">
+            <span class="aac-thumb-label">技能</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f3ede2'/%3E%3Crect x='60' y='50' width='130' height='120' rx='8' fill='%232f4a63'/%3E%3Cpath d='M80 90 h90 M80 120 h60' stroke='%23e0a04a' stroke-width='6'/%3E%3Ccircle cx='300' cy='110' r='52' fill='%235d7f9e' opacity='.55'/%3E%3Cpath d='M280 110 l14 14 l28 -30' stroke='%23ffffff' stroke-width='7' fill='none'/%3E%3C/svg%3E" alt="视频封面：从零学会家庭收纳，米白色调收纳盒与勾选图标">
+            <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+            <span class="aac-thumb-dur">20:10</span>
+          </div>
+          <div class="aac-video-body">
+            <h3>从零学会家庭收纳：五个区位的整理逻辑</h3>
+            <div class="aac-video-meta"><span>实用技巧</span><span>播放 14.5 万</span></div>
+            <div class="aac-video-foot">
+              <span class="aac-avatar" style="background:#5d7f9e;">林</span>
+              <span>林一舟</span>
+              <div class="aac-op">
+                <button class="aac-icon-btn aac-like" type="button" data-base="14500">♡ <span>1.4万</span></button>
+                <button class="aac-icon-btn aac-fav" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="aac-video-card" data-tag="职场">
+          <div class="aac-thumb">
+            <span class="aac-thumb-label">职场</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%2322384c'/%3E%3Crect x='50' y='60' width='90' height='120' rx='6' fill='%23e0a04a' opacity='.7'/%3E%3Crect x='155' y='90' width='90' height='90' rx='6' fill='%23ffffff' opacity='.25'/%3E%3Crect x='260' y='40' width='90' height='140' rx='6' fill='%235d7f9e' opacity='.6'/%3E%3C/svg%3E" alt="视频封面：带团队第一年，深色三栏结构图形">
+            <span class="aac-play"><svg viewBox="0 0 24 24" fill="#2f4a63" aria-hidden="true"><path d="M6 4 L20 12 L6 20 Z"/></svg></span>
+            <span class="aac-thumb-dur">18:44</span>
+          </div>
+          <div class="aac-video-body">
+            <h3>带团队第一年：一个中层管理者的失败清单</h3>
+            <div class="aac-video-meta"><span>行业观察</span><span>播放 7.3 万</span></div>
+            <div class="aac-video-foot">
+              <span class="aac-avatar" style="background:#22384c;">许</span>
+              <span>许行</span>
+              <div class="aac-op">
+                <button class="aac-icon-btn aac-like" type="button" data-base="7300">♡ <span>7300</span></button>
+                <button class="aac-icon-btn aac-fav" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="aac-section" id="aac-topic">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">专题企划</span>
+        <h2>三个持续更新的长期企划</h2>
+        <p>专题由编辑团队策划、创作者联合执行，围绕亚洲成年人关注的核心议题展开，欢迎报名参与共创。</p>
+      </div>
+      <div class="aac-topic-grid">
+        <article class="aac-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%232f4a63'/%3E%3Ccircle cx='300' cy='70' r='50' fill='%23e0a04a' opacity='.7'/%3E%3Cpath d='M0 230 Q100 170 200 220 T400 200 V300 H0 Z' fill='%23ffffff' opacity='.12'/%3E%3Crect x='70' y='100' width='120' height='140' rx='8' fill='%23ffffff' opacity='.2'/%3E%3C/svg%3E" alt="专题封面：三十以后的生活现场，深蓝色城市剪影">
+          <div class="aac-topic-body">
+            <h3>三十以后的生活现场</h3>
+            <p>记录三十岁之后的选择、焦虑与重建，已更新 6 集。</p>
+            <span class="aac-topic-status">更新中 · 第二季筹备</span>
+          </div>
+        </article>
+        <article class="aac-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f7e8cf'/%3E%3Ccircle cx='130' cy='150' r='70' fill='%23e0a04a' opacity='.8'/%3E%3Ccircle cx='250' cy='110' r='40' fill='%232f4a63' opacity='.6'/%3E%3Cpath d='M0 260 h400' stroke='%23c9982f' stroke-width='8' opacity='.5'/%3E%3C/svg%3E" alt="专题封面：家的第二种答案，暖橙色圆形家居意象">
+          <div class="aac-topic-body">
+            <h3>家的第二种答案</h3>
+            <p>独居、合租、跨城生活，重新定义成年人的居住方式。</p>
+            <span class="aac-topic-status">已完结 · 共 8 集</span>
+          </div>
+        </article>
+        <article class="aac-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23dbe9df'/%3E%3Cpath d='M50 220 Q120 120 200 200 T350 170' stroke='%234f7a5c' stroke-width='12' fill='none'/%3E%3Ccircle cx='310' cy='90' r='44' fill='%23e0a04a' opacity='.7'/%3E%3C/svg%3E" alt="专题封面：身体的第一封信，自然绿曲线与暖色圆点">
+          <div class="aac-topic-body">
+            <h3>身体的第一封信</h3>
+            <p>关于体检、睡眠、运动与情绪健康的身体叙事。</p>
+            <span class="aac-topic-status">征集中 · 接受投稿</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="aac-section aac-section-alt" id="aac-authors">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">创作者矩阵</span>
+        <h2>认真做内容的人，值得被认真对待</h2>
+        <p>点击作者可以查看简介与合作方向，平台为签约创作者提供拍摄、版权与分成支持。</p>
+      </div>
+      <div class="aac-author-grid">
+        <article class="aac-author-card">
+          <span class="aac-avatar" style="background:#2f4a63;">周</span>
+          <h3>周叙白</h3>
+          <span class="aac-author-field">人物访谈 · 职场观察</span>
+          <p>前媒体记者，擅长长镜头访谈，关注中年职业转型与城市中产的真实处境。</p>
+          <div class="aac-author-nums"><span><b>86</b>作品</span><span><b>24.6万</b>粉丝</span></div>
+          <button class="aac-icon-btn aac-author-btn" type="button" data-author="周叙白｜前媒体记者，专注人物访谈与职场观察，代表作《四十岁重新开始》。">查看档案</button>
+        </article>
+        <article class="aac-author-card">
+          <span class="aac-avatar" style="background:#c9982f;">林</span>
+          <h3>林一舟</h3>
+          <span class="aac-author-field">家居收纳 · 实用技巧</span>
+          <p>整理师，相信秩序感能带来情绪稳定，视频以步骤清晰、可复现著称。</p>
+          <div class="aac-author-nums"><span><b>112</b>作品</span><span><b>31.2万</b>粉丝</span></div>
+          <button class="aac-icon-btn aac-author-btn" type="button" data-author="林一舟｜整理师，擅长家庭收纳与生活流程优化，课程多次进入平台口碑榜。">查看档案</button>
+        </article>
+        <article class="aac-author-card">
+          <span class="aac-avatar" style="background:#4f7a5c;">吴</span>
+          <h3>吴青禾</h3>
+          <span class="aac-author-field">健康运动 · 康复科普</span>
+          <p>康复治疗师，用通俗语言讲清身体机制，反对以自律为名的过度消耗。</p>
+          <div class="aac-author-nums"><span><b>64</b>作品</span><span><b>18.9万</b>粉丝</span></div>
+          <button class="aac-icon-btn aac-author-btn" type="button" data-author="吴青禾｜康复治疗师，专注久坐人群的肩颈与腰背康复内容，坚持循证科普。">查看档案</button>
+        </article>
+        <article class="aac-author-card">
+          <span class="aac-avatar" style="background:#8a6aa0;">沈</span>
+          <h3>沈知意</h3>
+          <span class="aac-author-field">情感故事 · 文化访谈</span>
+          <p>写作者，影像风格克制，擅长把私人经验放进更大的时代语境里观看。</p>
+          <div class="aac-author-nums"><span><b>51</b>作品</span><span><b>15.4万</b>粉丝</span></div>
+          <button class="aac-icon-btn aac-author-btn" type="button" data-author="沈知意｜写作者与影像创作者，关注亲密关系与代际沟通，作品以细腻克制见长。">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="aac-section" id="aac-story">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">故事随笔</span>
+        <h2>镜头之外的文字记录</h2>
+        <p>有些话不适合放进视频，我们把它写下来，与影像互为补充。</p>
+      </div>
+      <div class="aac-story-grid">
+        <article class="aac-story aac-story-main">
+          <h3>拍摄《四十岁重新开始》的第九个月</h3>
+          <p>我们跟拍的第一位受访者在第三次拍摄时提出暂停。他说，没有想清楚的事不想被剪成结论。那一刻我意识到，纪录片的伦理不是把镜头关掉，而是承认有些过程不该被压缩成三十分钟的答案。</p>
+          <div class="aac-story-meta"><span>周叙白</span><span>2026-11-12</span></div>
+        </article>
+        <article class="aac-story">
+          <h3>整理房间时，我整理的是自己的犹豫</h3>
+          <p>很多人问我收纳的核心技巧。其实最重要的是先承认：你不需要留下所有东西。成年人的生活里，最难的不是买东西，而是说再见。</p>
+          <div class="aac-story-meta"><span>林一舟</span><span>2026-11-08</span></div>
+        </article>
+        <article class="aac-story">
+          <h3>身体发出信号之前，先学会听</h3>
+          <p>在一次线下活动里，一位观众说她的肩痛是“忍出来的”。这不是矫情，而是长期忽视后的正常反应。我们需要的不是更强的意志，而是更早的觉察。</p>
+          <div class="aac-story-meta"><span>吴青禾</span><span>2026-11-03</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="aac-section aac-section-alt" id="aac-gallery">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">影像墙</span>
+        <h2>用户作品墙：成年人的日常切片</h2>
+        <p>来自社区投稿的静帧与封面，包含城市探索、手作、宠物与家庭生活等主题。</p>
+      </div>
+      <div class="aac-gallery">
+        <div class="aac-gal-item aac-gal-a">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%232f4a63'/%3E%3Ccircle cx='300' cy='100' r='70' fill='%23e0a04a' opacity='.7'/%3E%3Cpath d='M0 300 Q100 230 200 290 T400 270 V400 H0 Z' fill='%23ffffff' opacity='.12'/%3E%3Cpath d='M0 340 Q120 290 240 330 T400 320 V400 H0 Z' fill='%235d7f9e' opacity='.4'/%3E%3C/svg%3E" alt="影像墙作品：傍晚的江边散步，深蓝与暖橙对比赛">
+          <span>傍晚的江边散步</span>
+        </div>
+        <div class="aac-gal-item aac-gal-b">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23f7e8cf'/%3E%3Ccircle cx='100' cy='100' r='50' fill='%23e0a04a' opacity='.85'/%3E%3Crect x='200' y='60' width='120' height='80' rx='10' fill='%232f4a63' opacity='.65'/%3E%3C/svg%3E" alt="影像墙作品：周末手作陶艺，暖橙色圆形陶土意象">
+          <span>周末手作陶艺</span>
+        </div>
+        <div class="aac-gal-item aac-gal-c">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23dbe9df'/%3E%3Ccircle cx='100' cy='90' r='40' fill='%234f7a5c' opacity='.7'/%3E%3Cpath d='M60 150 Q100 110 140 150 Z' fill='%23e0a04a' opacity='.7'/%3E%3C/svg%3E" alt="影像墙作品：阳台上的绿植角，自然绿与琥珀色">
+          <span>阳台绿植角</span>
+        </div>
+        <div class="aac-gal-item aac-gal-d">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23e6dcef'/%3E%3Cpath d='M100 150 C60 110 70 70 100 90 C130 70 140 110 100 150 Z' fill='%238a6aa0' opacity='.85'/%3E%3C/svg%3E" alt="影像墙作品：给朋友写一封信，粉紫色爱心图形">
+          <span>给朋友写一封信</span>
+        </div>
+        <div class="aac-gal-item aac-gal-b">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23e8eef6'/%3E%3Crect x='50' y='40' width='90' height='120' rx='8' fill='%232f4a63' opacity='.8'/%3E%3Crect x='170' y='70' width='80' height='90' rx='8' fill='%23c9982f' opacity='.7'/%3E%3Ccircle cx='320' cy='100' r='40' fill='%235d7f9e' opacity='.55'/%3E%3C/svg%3E" alt="影像墙作品：书桌前的夜晚，冷调蓝灰几何构图">
+          <span>书桌前的夜晚</span>
+        </div>
+        <div class="aac-gal-item aac-gal-c">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%2322384c'/%3E%3Ccircle cx='70' cy='70' r='30' fill='%23e0a04a' opacity='.8'/%3E%3Crect x='110' y='100' width='60' height='60' rx='8' fill='%23ffffff' opacity='.25'/%3E%3C/svg%3E" alt="影像墙作品：深夜电台录音，深色调音波意象">
+          <span>深夜电台录音</span>
+        </div>
+        <div class="aac-gal-item aac-gal-d">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23f3ede2'/%3E%3Cpath d='M40 150 L100 70 L160 150 Z' fill='%232f4a63' opacity='.75'/%3E%3Ccircle cx='150' cy='55' r='22' fill='%23e0a04a' opacity='.85'/%3E%3C/svg%3E" alt="影像墙作品：去山里徒步，米白色调山脉与太阳">
+          <span>去山里徒步</span>
+        </div>
+        <div class="aac-gal-item aac-gal-a">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%235d7f9e'/%3E%3Cpath d='M0 280 Q80 200 180 260 T400 240 V400 H0 Z' fill='%23ffffff' opacity='.18'/%3E%3Ccircle cx='120' cy='110' r='50' fill='%23e0a04a' opacity='.7'/%3E%3Crect x='240' y='140' width='100' height='140' rx='10' fill='%2322384c' opacity='.4'/%3E%3C/svg%3E" alt="影像墙作品：出差途中的清晨，蓝灰色调酒店窗景">
+          <span>出差途中的清晨</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价与企业动态 -->
+  <section class="aac-section" id="aac-news">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">用户评价 · 企业动态</span>
+        <h2>社区的声音，与品牌的最新进展</h2>
+        <p>真实用户的反馈构成我们的口碑基础，企业动态记录平台的持续更新。</p>
+      </div>
+      <div class="aac-review-grid" style="margin-bottom:48px;">
+        <article class="aac-review">
+          <span class="aac-avatar" style="background:#2f4a63;">方</span>
+          <div class="aac-review-body">
+            <h4>方女士 <span>★★★★★</span></h4>
+            <p>看了《三十岁转岗实录》，第一次觉得镜头里的人和我一样会犹豫。没有说教，这点很难得。</p>
+          </div>
+        </article>
+        <article class="aac-review">
+          <span class="aac-avatar" style="background:#c9982f;">李</span>
+          <div class="aac-review-body">
+            <h4>李先生 <span>★★★★★</span></h4>
+            <p>收纳那期我照着做了，厨房终于有了秩序。步骤讲得清楚，比很多短视频扎实。</p>
+          </div>
+        </article>
+        <article class="aac-review">
+          <span class="aac-avatar" style="background:#4f7a5c;">赵</span>
+          <div class="aac-review-body">
+            <h4>赵同学 <span>★★★★☆</span></h4>
+            <p>希望专题能多更新一些，尤其是城市探索系列。节奏慢，但不拖沓，适合下班之后看。</p>
+          </div>
+        </article>
+        <article class="aac-review">
+          <span class="aac-avatar" style="background:#8a6aa0;">王</span>
+          <div class="aac-review-body">
+            <h4>王老师 <span>★★★★★</span></h4>
+            <p>作为中学心理老师，我会把其中几期推荐给家长。内容很克制，不会制造焦虑。</p>
+          </div>
+        </article>
+        <article class="aac-review">
+          <span class="aac-avatar" style="background:#5d7f9e;">陈</span>
+          <div class="aac-review-body">
+            <h4>陈先生 <span>★★★★☆</span></h4>
+            <p>投稿过一次，编辑回复得很认真，给了具体修改建议，感觉这个社区是长期做事的。</p>
+          </div>
+        </article>
+        <article class="aac-review">
+          <span class="aac-avatar" style="background:#22384c;">周</span>
+          <div class="aac-review-body">
+            <h4>周女士 <span>★★★★★</span></h4>
+            <p>喜欢这种不追热点的态度，每期都能看到具体的人和具体的问题，看完会想一会儿。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="aac-split">
+        <div>
+          <h3 style="font-size:19px;color:var(--aac-blue-deep);margin-bottom:18px;">企业动态 · 官方更新</h3>
+          <ul class="aac-timeline">
+            <li>
+              <time>2026-11-16</time>
+              <h4>「三十以后的生活现场」第二季启动报名</h4>
+              <p>面向 28 岁以上用户征集真实故事，入选者将获得平台拍摄与制作支持。</p>
+            </li>
+            <li>
+              <time>2026-11-10</time>
+              <h4>创作者分成机制升级公告</h4>
+              <p>原创内容结算周期缩短至 15 天，并新增版权维权协助通道。</p>
+            </li>
+            <li>
+              <time>2026-11-02</time>
+              <h4>高清片库全面升级</h4>
+              <p>平台主要栏目完成 1080P 以上规格更新，移动端加载速度同步优化。</p>
+            </li>
+            <li>
+              <time>2026-10-25</time>
+              <h4>年度人物访谈合集发布</h4>
+              <p>精选 12 位受访者的完整版本向会员开放，并附文字实录。</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-size:19px;color:var(--aac-blue-deep);margin-bottom:18px;">合作品牌 · 内容伙伴</h3>
+          <div class="aac-partner-grid">
+            <div class="aac-partner">城市书房计划</div>
+            <div class="aac-partner">青禾康复中心</div>
+            <div class="aac-partner">慢行生活研究所</div>
+            <div class="aac-partner">南方手作工坊</div>
+            <div class="aac-partner">邻里心理健康站</div>
+            <div class="aac-partner">公共影像档案馆</div>
+          </div>
+          <div class="aac-about-card" style="margin-top:18px;">
+            <h4>数据榜单 · 口碑榜 <span class="aac-chip">本月</span></h4>
+            <p>1. 《家庭账本怎么记》— 用户收藏第一<br>
+               2. 《久坐族的肩颈康复》— 新人观看第一<br>
+               3. 《四十岁重新开始》— 完播口碑第一</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="aac-section aac-section-alt" id="aac-faq">
+    <div class="aac-container">
+      <div class="aac-section-head">
+        <span class="aac-eyebrow">帮助中心</span>
+        <h2>常见问题</h2>
+        <p>关于内容、创作者合作与投稿流程的高频疑问，点击问题展开说明。</p>
+      </div>
+      <div class="aac-faq">
+        <details>
+          <summary>亚洲成年人的内容主要关注哪些主题？</summary>
+          <p>平台内容覆盖职场、家庭、情感、健康运动、生活技能与城市探索等方向，强调原创与真实，避免制造焦虑。每个专题都会有明确的问题意识与拍摄周期。</p>
+        </details>
+        <details>
+          <summary>如何申请成为签约创作者？</summary>
+          <p>可通过页面底部的投稿入口提交作品链接与创作说明。编辑部会在 7 个工作日内回复，通过初审后可进入试拍与签约流程，平台提供拍摄支持与版权协助。</p>
+        </details>
+        <details>
+          <summary>投稿的作品有什么要求？</summary>
+          <p>要求为本人原创，画面清晰，主题与成人生活相关，时长建议 3 分钟以上。涉及他人出镜需取得同意，涉及未成年人须获得监护人授权。</p>
+        </details>
+        <details>
+          <summary>平台内容是否支持下载或转载？</summary>
+          <p>所有内容均为正版出品，未经授权不得用于商业用途。个人分享可通过页面分享按钮获取链接，商业合作请联系官方邮箱沟通授权。</p>
+        </details>
+        <details>
+          <summary>专题企划如何报名参与？</summary>
+          <p>在对应专题页面点击报名，填写基本信息与故事梗概。编辑部会根据选题匹配度进行筛选，入选后会安排电话沟通与拍摄排期。</p>
+        </details>
+        <details>
+          <summary>遇到播放问题怎么办？</summary>
+          <p>建议先检查网络环境并刷新页面。若问题持续，可通过联系表单说明设备型号与网络情况，技术支持会尽快排查处理。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="aac-section" id="aac-contact">
+    <div class="aac-container">
+      <div class="aac-contact-band">
+        <div>
+          <h2>与亚洲成年人一起，把真实记录下来</h2>
+          <p>无论你是创作者、合作品牌，还是愿意讲述自己故事的普通人，我们都欢迎你的来信。官方网站持续开放投稿、合作与反馈通道。</p>
+          <div class="aac-contact-actions">
+            <button class="aac-btn aac-btn-amber" type="button" id="aacSubmitOpen">我要投稿</button>
+            <button class="aac-btn aac-btn-ghost" type="button" id="aacShareBtn">分享给朋友</button>
+          </div>
+        </div>
+        <ul class="aac-contact-list">
+          <li><b>品牌合作</b><span>brand@adultlife-studio.cn</span></li>
+          <li><b>投稿咨询</b><span>create@adultlife-studio.cn</span></li>
+          <li><b>媒体联络</b><span>press@adultlife-studio.cn</span></li>
+          <li><b>办公地址</b><span>上海市静安区影像创作园 3 号楼 5 层</span></li>
+          <li><b>工作时间</b><span>周一至周五 10:00–19:00（法定节假日除外）</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="aac-footer">
+  <div class="aac-container">
+    <div class="aac-footer-grid">
+      <div class="aac-footer-brand">
+        <span class="aac-brand-name">亚洲成年人</span>
+        <p>亚洲成年人官方网站，专注成人生活影像的原创内容平台，以真实、专业与陪伴感构建长期内容生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#aac-focus">焦点视频</a></li>
+          <li><a href="#aac-stream">热门视频流</a></li>
+          <li><a href="#aac-topic">专题企划</a></li>
+          <li><a href="#aac-gallery">用户影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#aac-about">品牌故事</a></li>
+          <li><a href="#aac-authors">创作者矩阵</a></li>
+          <li><a href="#aac-news">企业动态</a></li>
+          <li><a href="#aac-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li><a href="#aac-contact">合作与投稿</a></li>
+          <li><a href="#aac-contact">媒体联络</a></li>
+          <li><a href="#aac-contact">用户反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="aac-footer-bottom">
+      <span>© 2026 亚洲成年人影像文化有限公司 · 官方网站 · 持续运营中</span>
+      <span>沪ICP备2026011896号-2 · 广播电视节目制作经营许可证（沪）字第 0429 号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="aac-totop" id="aacToTop" type="button" aria-label="回到顶部">↑</button>
+<div class="aac-toast" id="aacToast" role="status" aria-live="polite"></div>
+
+<div class="aac-modal-mask" id="aacModalMask">
+  <div class="aac-modal" role="dialog" aria-modal="true" aria-labelledby="aacModalTitle">
+    <h3 id="aacModalTitle">我要投稿</h3>
+    <p id="aacModalDesc" style="margin-bottom:16px;">填写基本信息，编辑部会在 7 个工作日内回复。</p>
+    <form id="aacSubmitForm">
+      <div class="aac-form-row">
+        <label for="aacNameInput">称呼</label>
+        <input id="aacNameInput" type="text" placeholder="怎么称呼你" required>
+      </div>
+      <div class="aac-form-row">
+        <label for="aacContactInput">联系方式</label>
+        <input id="aacContactInput" type="text" placeholder="邮箱或常用联系方式" required>
+      </div>
+      <div class="aac-form-row">
+        <label for="aacIdeaInput">选题或作品说明</label>
+        <textarea id="aacIdeaInput" rows="4" placeholder="简单描述你的故事或视频主题" required></textarea>
+      </div>
+      <div class="aac-modal-actions">
+        <button class="aac-btn aac-btn-ghost" type="button" id="aacModalCancel">取消</button>
+        <button class="aac-btn aac-btn-primary" type="submit">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('aacToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('aac-show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('aac-show');
+    }, 2400);
+  }
+
+  /* nav toggle */
+  var navToggle = document.getElementById('aacNavToggle');
+  var navEl = document.getElementById('aacNav');
+  if(navToggle && navEl){
+    navToggle.addEventListener('click', function(){
+      var open = navEl.classList.toggle('aac-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.textContent = open ? '✕' : '☰';
+    });
+    navEl.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && navEl.classList.contains('aac-open')){
+        navEl.classList.remove('aac-open');
+        navToggle.setAttribute('aria-expanded','false');
+        navToggle.textContent = '☰';
+      }
+    });
+  }
+
+  /* search */
+  var searchInput = document.getElementById('aacSearchInput');
+  var searchBtn = document.getElementById('aacSearchBtn');
+  var searchFeedback = document.getElementById('aacSearchFeedback');
+  var searchSuggest = ['四十岁重新开始','家庭账本','肩颈康复','三十以后的生活现场','城市探索','收纳整理','情感故事','周叙白'];
+  function runSearch(){
+    var kw = (searchInput.value || '').trim();
+    if(!kw){
+      showToast('请输入关键词后再搜索');
+      return;
+    }
+    var matched = searchSuggest.filter(function(s){ return s.indexOf(kw) !== -1 || kw.indexOf(s) !== -1; });
+    if(matched.length === 0){
+      matched = searchSuggest.slice(0, 4);
+    }
+    searchFeedback.innerHTML = '与「<strong>' + kw.replace(/[<>&]/g,'') + '</strong>」相关的内容：' + matched.join(' · ');
+    searchFeedback.classList.add('aac-show');
+    showToast('已为你匹配 ' + matched.length + ' 个相关结果');
+  }
+  if(searchBtn){ searchBtn.addEventListener('click', runSearch); }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      if(searchFeedback && !searchInput.value.trim()){
+        searchFeedback.classList.remove('aac-show');
+      }
+    });
+  }
+
+  /* like buttons */
+  document.querySelectorAll('.aac-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var base = parseInt(btn.getAttribute('data-base') || '0', 10);
+      var liked = btn.classList.toggle('aac-on');
+      var val = liked ? base + 1 : base;
+      if(span){
+        span.textContent = val >= 10000 ? (val/10000).toFixed(1) + '万' : val;
+      }
+      showToast(liked ? '已点赞' : '已取消点赞');
+    });
+  });
+
+  /* favorite buttons */
+  document.querySelectorAll('.aac-fav').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('aac-on');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      showToast(on ? '已加入收藏' : '已取消收藏');
+    });
+  });
+
+  /* tag filter */
+  var filterRow = document.getElementById('aacFilterRow');
+  var streamGrid = document.getElementById('aacStreamGrid');
+  if(filterRow && streamGrid){
+    filterRow.addEventListener('click', function(e){
+      var btn = e.target.closest('.aac-filter');
+      if(!btn) return;
+      filterRow.querySelectorAll('.aac-filter').forEach(function(b){ b.classList.remove('aac-active'); });
+      btn.classList.add('aac-active');
+      var tag = btn.getAttribute('data-tag');
+      var cards = streamGrid.querySelectorAll('.aac-video-card');
+      var shown = 0;
+      cards.forEach(function(card){
+        var ok = tag === '全部' || card.getAttribute('data-tag') === tag;
+        card.style.display = ok ? '' : 'none';
+        if(ok) shown++;
+      });
+      if(tag !== '全部'){ showToast('已筛选「' + tag + '」相关视频 ' + shown + ' 条'); }
+    });
+  }
+
+  /* author modal -> reuse modal */
+  var mask = document.getElementById('aacModalMask');
+  var modalTitle = document.getElementById('aacModalTitle');
+  var modalDesc = document.getElementById('aacModalDesc');
+  var submitForm = document.getElementById('aacSubmitForm');
+  function openModal(title, desc, mode){
+    if(!mask) return;
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    submitForm.style.display = mode === 'info' ? 'none' : '';
+    mask.classList.add('aac-show');
+  }
+  function closeModal(){
+    if(mask) mask.classList.remove('aac-show');
+  }
+  document.querySelectorAll('.aac-author-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('创作者档案', btn.getAttribute('data-author') || '', 'info');
+    });
+  });
+  var submitOpen = document.getElementById('aacSubmitOpen');
+  if(submitOpen){
+    submitOpen.addEventListener('click', function(){
+      openModal('我要投稿', '填写基本信息，编辑部会在 7 个工作日内回复。', 'form');
+    });
+  }
+  var cancelBtn = document.getElementById('aacModalCancel');
+  if(cancelBtn){ cancelBtn.addEventListener('click', closeModal); }
+  if(mask){
+    mask.addEventListener('click', function(e){ if(e.target === mask) closeModal(); });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal();
+      submitForm.reset();
+      showToast('投稿信息已提交，感谢你的信任');
+    });
+  }
+
+  /* share */
+  function sharePage(){
+    var url = 'https://www.adultlife-studio.cn/';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){
+        showToast('页面链接已复制，可分享给朋友');
+      }).catch(function(){
+        showToast('长按地址栏即可复制分享');
+      });
+    }else{
+      showToast('长按地址栏即可复制分享');
+    }
+  }
+  var shareBtn = document.getElementById('aacShareBtn');
+  var shareTop = document.getElementById('aacShareTop');
+  if(shareBtn){ shareBtn.addEventListener('click', sharePage); }
+  if(shareTop){ shareTop.addEventListener('click', sharePage); }
+
+  /* back to top */
+  var toTop = document.getElementById('aacToTop');
+  window.addEventListener('scroll', function(){
+    if(!toTop) return;
+    if(window.scrollY > 560){ toTop.classList.add('aac-show'); }
+    else{ toTop.classList.remove('aac-show'); }
+  }, {passive:true});
+  if(toTop){
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+})();
+</script>
+</body>
+  </html>
